@@ -1,0 +1,579 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cursive", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  }
+
+
+/* css for header*/
+  .header {
+    width: 100%;
+    background-color: white;
+    padding: 0 5%;
+    align-items: center;
+   }
+/*Navigation Bar*/
+  .navbar {
+    max-width: 1170px;
+    width: 100%;
+    height: fit-content; /*adjusting height*/
+    display: flex; /*using flex to adjust the navbar contents horizontally and vertically*/
+    justify-content: space-between; /* This centers the navbar content horizontally */
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  .navbar ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  /*mouse over link*/
+  .navbar ul a:hover,
+  .navbar ul a.active {
+    color:orange; /* Change link color on hover */
+  }
+
+  .time {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 20px;
+}
+
+  section {
+    padding:5% 10%;
+  }
+/*Navigation button*/
+  button.explore {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+   }
+   
+   button.action {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s ease ;
+   }
+
+   button.cart {   /*for both home page and product page add to cart button*/
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: black;
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+   }
+/*mouse cursor hover effect*/
+   button.cart:hover {
+    color: black;
+    background-color: white;
+   }
+
+   button.news {   /*for both home page and product page add to cart button*/
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: black;
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+   }
+
+   button.news:hover {
+    color: black;
+    background-color: white;
+   }
+
+   /*For slider*/
+#slider-home .actionphotos
+   {
+   width: 100%;
+   height: 500px;
+   overflow: hidden; /*to add scroll bars*/
+   position: relative;
+   box-shadow: 5px 5px 10px grey;
+   }
+
+#slider-home .actionphotos img
+   {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   }
+
+/*Latest Models section*/
+
+#latest1 {
+    text-align: center;
+}
+
+ #latest1 .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+ }
+
+ #latest1 .first-model {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid rgb(196, 237, 196);
+  border-radius: 25px;
+
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 10px 0;
+  transition: 0.3s ease;
+ }
+
+ #latest1 .first-model:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.07); /*Border shadow outside the content*/
+ } 
+
+ #latest1 .first-model img {
+  width: 100%;
+  border-radius: 20px;
+ }
+
+ #latest1 .first-model .details {
+  text-align: start;
+  padding: 10px 0;
+ } 
+
+ #latest1 .first-model .details span {
+  color:grey;
+  font-size: 12px;
+ }
+
+ #latest1 .first-model .details h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+ }
+
+ #latest1 .first-model .details h4{
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: start;
+  color: black;
+ }
+ 
+/*Home page two action banners starts here*/
+#banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 100px;
+}
+
+#banner .first-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url("../images/homepage/imgwatchh.png");
+  min-width: 580px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#banner .second-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url("../images/homepage/actionbanner.png");
+  min-width: 580px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#banner  h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#banner h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#banner p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#banner .first-banner:hover button{
+  background-color: green;
+  border: 1px  solid green;
+}
+
+#banner .second-banner:hover button{
+  background-color: green;
+  border: 1px  solid green;
+}
+
+/*Home page two action banners ends here*/
+#detailss {
+  display: flex;
+  margin-top: 20px;
+  padding:5% 10%;
+}
+
+#detailss .single {
+  width:40%;
+  margin-right: 50px;
+}
+
+#detailss .single-details{
+  width: 50%;
+  padding-top: 30px;
+}
+
+#detailss .single-details h4{
+ padding: 40px 0px 20px 0px;
+}
+
+#detailss .single-details h2{
+  font-size: 26px;
+ }
+
+/*border starts here*/
+#border {
+  background-image: url("../images/homepage/decor.png");
+  background-position: cover;
+  background-size: cover;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+  #border h4 {
+    color:rgb(136, 136, 255);
+    font-size: 30px;
+   }
+  
+   #border p {
+    color:pink;
+    font-size: 20px;
+    padding: 10px 0;
+   }
+
+ /*popup feature starts here*/
+ .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    visibility: hidden;/*Makes the content hidden*/
+ }
+
+.shop{
+  visibility: visible;/*makes the content visible*/
+ }
+
+
+.popup .popup-content h1 {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.popup .popup-content button{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border: none;
+  opacity: 0.8;
+}
+/*popup feature ends here*/
+ 
+/*Blog page starts here*/
+
+#blog-container {
+  padding: 150px 150px 0px 150px;
+}
+
+#blog-container .container{
+    display: flex; 
+    align-items: center;
+    width:100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog-container .row{
+  width:50%;
+  margin-right: 40px;
+}
+
+#blog-container img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#blog-container .blog-1{
+  width:100%;
+}
+
+#blog-container .blog-1 a{
+  text-decoration: none;
+  color: darkcyan;
+  margin: 0px 200px;
+}
+
+#blog-container .blog-1 a:hover{
+  color: purple;
+}
+
+#blog-container .blog-1 p{
+  padding: 10px 0;
+}
+
+/*Blog page ends here*/
+/*Research page reference section*/
+#reference .column {
+  flex: 0 0 auto; 
+  width: 45%; 
+  padding: 10px;
+}
+
+#reference .column img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+#reference {
+  display: flex;
+  gap: 10px; 
+  align-items:center; 
+}
+#reference .p {
+  flex: 1; 
+  text-align: justify;
+}
+
+/*about us starts here*/
+.About .team{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 80px;
+}
+
+.About .member {
+  margin: 8px;
+}
+
+.About .member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.About .member h3 {
+  font-size: 12px;
+  margin: 7px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.member a{
+  text-decoration: none;
+  color: darkcyan;
+  padding: 0px 30px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.About .member a:hover {
+  color: purple;
+}
+
+.About .member p {
+  text-align: center;
+  font-size: 12px;
+  margin: 7px;
+}
+/*about us ends here*/
+
+/*about us page portfolio starts here*/
+#identity .intro img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0px 550px;
+}
+
+#identity .contact {
+  padding: 15px 15px;
+}
+
+#identity .skill {
+  padding: 15px 15px;
+}
+
+#identity .education {
+  padding: 15px 15px;
+}
+
+#identity .course {
+  padding: 15px 15px;
+}
+
+#identity .achieve {
+  padding: 15px 15px;
+}
+
+#identity .lan {
+  padding: 15px 15px;
+}
+
+/*about us page portfolio ends here*/
+/*feedback form*/
+.feedbackform{
+  text-align: center;
+}
+
+form {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  background-color: grey;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+form button {
+  outline: none;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  margin: 10px 0px;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button:hover {
+  color: black;
+  background-color: gainsboro;
+}
+/*footer starts here*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:50px 40px;
+}
+
+footer .column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .column img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer h4 {
+  font-size: 15px;
+  padding-bottom: 20px;
+  color: darkorange;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover{
+  color: darkcyan;
+}
+
+/*Footer Ends Here*/
+  
+  

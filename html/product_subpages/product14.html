@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch</title>
+    <link rel="stylesheet" href="../../css/style.css"><!--link to external css-->
+
+</head>
+
+<body>
+    <nav class="header">
+        <div class="navbar">
+            <a href="../../../Development/home.html"><img src="../../images/homepage/logo.png" alt="AXIS" width="80px"height="auto" style="cursor: pointer;"></a>
+            <ul>
+                <li><a href="../../../Development/home.html">Home</a></li>
+                <li><a class="active" href="../../html/product.html">Products</a></li>
+                <li><a href="../../html/blog.html">Blogs</a></li>
+                <li><a href="../../html/research.html">Research</a></li>
+                <li><a href="../../html/about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="detailss" >
+        <div class="single">
+            <img src="../../images/products/frederique2.png" width="100%"  alt="" >
+        </div>
+
+            <div class="single-details">
+                <h5>Frederique Constant</h5>
+                <h3>Classic Worldtimer</h3>
+                <h2>$4,100</h2>
+                <button class="cart" onclick="opencart()">Add to cart</button>
+                <h4>
+                    Enter your review:
+                </h4>
+                <input type="text" name="sendd" id="sends" placeholder="review" style="padding: 5px 0px;">
+                <button class="cart" onclick="Send()">Send</button>
+                <h3>Product details</h3>
+                <p>
+                        Frederique Constant is a Swiss luxury watch brand. <br>
+                        The brand is known for producing high-quality timepieces <br>
+                        that are designed with a focus on craftsmanship and innovation. <br>
+                        Frederique Constant watch is famous for its high quality <br>
+                         classical watches at sensible prices.
+                </p>
+
+                <div class="popup" id="purchase">
+                <div class="popup-content">
+                    <h1>Added to cart <br>Successfully!!</h1>
+                    <button onclick="closecart()">DONE</button>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="border">
+        <h4>Free Delivery & No Shipping charges</h4>
+        <p>On Any Purchase</p>
+    </section>
+    
+    <footer class="last">
+        <div class="follow">
+            <img src="../../images/homepage/logo.png" alt="" style="height: 90px;">
+            <p style="color: darkorange;">Follow Us</p>
+            <a href="https://www.facebook.com/"><img src="../../images/homepage/fb.png" alt="" style="cursor: pointer;"></a>
+            <a href="https://www.instagram.com/"><img src="../../images/homepage/insta.png" alt="" style="cursor: pointer;"></a>
+        </div>
+
+        <div class="column">
+            <h4>Contact Us</h4>
+            <p><strong>Address: </strong> Durbarmarg, Kathmandu 44600 </p>
+            <p><strong>Phone:</strong> 01-4245472</p>
+            <p><strong>Hours:</strong> 9:00 - 19:00, Sun - Fri </p>
+        </div>
+
+        <div class="column">
+            <h4>Quick Links</h4>
+            <a href="../../../Development/home.html" >Home</a>
+            <a href="../../html/product.html" >Product</a>
+            <a href="../../html/blog.html" >Blog</a>
+            <a href="../../html/research.html" >Research</a>
+            <a href="../../html/about.html" >About Us</a>
+            
+            <p style="color: darkorange;">Secured Payment Gateways</p>
+            <img src="../../images/homepage/payment.png" alt="" height="80px">
+        </div>
+        
+    </footer>
+
+    <script src="../../js/script.js"></script><!--link to external js-->
+</body>
+</html>
