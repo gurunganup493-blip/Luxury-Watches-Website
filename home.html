@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch</title>
+    <link rel="stylesheet" href="css/style.css"><!--link to external css-->
+
+</head>
+<body>
+    <!--navigation-->
+    <nav class="header">
+        <div class="navbar">
+            <a href="home.html"><img src="images/homepage/logo.png" alt="AXIS" width="80px"height="auto" style="cursor: pointer;"></a>
+            <div id="count" class="time"></div> <!-- Clock added here -->
+            <div id="calendar" class="time"></div> <!-- Date added here-->
+            <ul><!--link to webpages-->
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="html/product.html">Products</a></li>
+                <li><a href="html/blog.html">Blogs</a></li>
+                <li><a href="html/research.html">Research</a></li>
+                <li><a href="html/about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <style>
+        #home {
+            background-color: rgb(219, 217, 217);
+            background-image: url("images/homepage/background.png");
+            width: 100%;
+            height: 700px;
+            background-size: cover;
+            background-position: top left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        </style>
+    <!--main content-->
+    <div class="main-container"> 
+        <style>
+        #home .main-container h5 {
+            color: blueviolet;
+            font-size: 60px;
+          }
+        
+          #home .main-container h1 {
+            color: green;
+          } 
+        
+          #home button {
+            font-size: 14px;
+            font-weight: 600;
+            outline: none;
+            border-radius: 2px;
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+          }
+        
+          
+          #home :hover button {
+            color: white;
+            background-color: blueviolet;
+          }
+        </style>
+
+        <h5>New Arrivals</h5>
+        <h1>Join The Quality of Movement!</h1>
+        <p>A watch is a timeless piece of elegance that <br> how you are keeping up with the times</p>
+        <a href="html/product.html"><button>Discover Watches</button></a> <!--Discover Watches navigates to product page-->
+    </div>
+    </section>
+
+    <!--latest1 products-->
+    <section id="latest1">
+        <h2>Latest Models</h2>
+        <span>A fine timepiece is part of dressing like a gentleman</span>
+        <div class="container">
+
+            <div class="first-model">
+                <a href="html/product_subpages/product1.html"><img src="images/products/vancheron4.png" alt=""></a>
+                <div class="details">
+                    <a href="html/product_subpages/product1.html" style="text-decoration: none;"><span>Vacheron Constantin</span></a>
+                    <a href="html/product_subpages/product1.html" style="text-decoration: none;"><h5>Patrimony Perpetual Calendar</h5></a>
+                </div>
+                <strike style="color: red;">$81,000</strike>
+                <h4>$77,000</h4>
+                </div>
+
+            <div class="first-model">
+                <a href="html/product_subpages/product2.html" ><img src="images/products/vacheron.png" alt=""></a>
+                <div class="details">
+                    <a href="html/product_subpages/product2.html" style="text-decoration: none;"><span>Vacheron Constantin</span></a>
+                    <a href="html/product_subpages/product2.html" style="text-decoration: none;"><h5>Overseas Quartz</h5></a>
+                </div>
+                <strike style="color: red;">$51,000</strike>
+                <h4>$47,000</h4>
+                
+            </div>
+
+            <div class="first-model">
+                <a href="html/product_subpages/product3.html"><img src="images/products/vancheron2.png" alt=""></a>
+                <div class="details">
+                    <a href="html/product_subpages/product3.html" style="text-decoration: none;"><span>Vacheron Constantin</span></a>
+                    <a href="html/product_subpages/product3.html" style="text-decoration: none;"><h5>Overseas Dualtime</h5></a>
+                </div>
+                <strike style="color: red;">$33,000</strike>
+                <h4>$29,000</h4>
+              
+            </div>
+
+            <div class="first-model">
+                <a href="html/product_subpages/product4.html" ><img src="images/products/vancheron3.png" alt=""></a>
+                <div class="details">
+                    <a href="html/product_subpages/product4.html/" style="text-decoration: none;"><span>Vacheron Constantin</span></a>
+                    <a href="html/product_subpages/product4.html" style="text-decoration: none;"><h5>Patrimony Self-Winding</h5></a>
+                </div>
+                <strike style="color: red;">$35,000</strike>
+                <h4>$31,000</h4>
+                
+            </div>
+        </div>
+    </section>
+
+<!--html code for slider-->
+<section id="slider-home">
+    <div class="actionphotos">
+        <div id="slidingimg">
+          <img src="images/homepage/slider1.png">
+        </div>
+      </div>
+</section>
+
+<!--html code for banner-->
+    <section id="decor">
+        <style>
+            #decor{
+                margin: 10px 0px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                background-image: url("images/homepage/homedecor.png");
+                align-items: center;
+                width: 100%;
+                height: 280px;
+                background-position: bottom left;
+                background-size: cover;
+            }
+
+            #decor h4 {
+                color:goldenrod;
+                font-size: 16px;
+            }
+
+            #decor h2 {
+                color:skyblue;
+                font-size: 30px;
+                padding: 10px 0;
+            }
+ 
+            #decor button:hover{
+                background-color: green;
+                color: white;
+            }
+        </style>
+        <h4>Repair & Servicing</h4>
+        <h2>Up to 30% off - All watches</h2>
+        <a href="html/product.html"><button class="explore">Explore More</button></a><!--overview of other webpages in productpage-->
+        </div>
+    </section>
+
+    <!--latest1 products-->
+    <section id="latest1">
+        <h2>Recommended Products</h2>
+        <span>Collecting watches is like collecting moments in time</span>
+        <div class="container">
+            <div class="first-model">
+                <a href="html/product_subpages/product5.html"><img src="images/products/Glashuette.png" alt=""></a>
+                <div class="details">
+                    <a href="html/product_subpages/product5.html" style="text-decoration: none;"><span>Glashuette</span></a>
+                    <a href="html/product_subpages/product5.html" style="text-decoration: none;"><h5>Alfred Helwig Tourbillon</h5></a>
+                </div>
+                <strike style="color: red;">$130,000</strike>
+                <h4>$126,000</h4>
+                
+            </div>
+
+            <div class="first-model">
+                <a href="html/product_subpages/product6.html"><img src="images/products/Glashuette2.png" alt=""></a>
+                <div class="details">
+                    <a href="html/product_subpages/product6.html" style="text-decoration: none;"><span>Glashuette</span></a>
+                    <a href="html/product_subpages/product6.html" style="text-decoration: none;"><h5>Senator Tourbillon</h5></a>
+                </div>
+                <strike style="color: red;">$110,000</strike>
+                <h4>$104,000</h4>
+                
+            </div>
+
+            <div class="first-model">
+                <a href="html/product_subpages/product7.html"><img src="images/products/Glashuette3.png" alt=""></a>
+                <div class="details">
+                    <a href="html/product_subpages/product7.html" style="text-decoration: none;"><span>Glashuette</span></a>
+                        <a href="html/product_subpages/product7.html" style="text-decoration: none;"><h5>Senator Cosmopolite</h5></a>
+                </div>
+                <strike style="color: red;">$39,000</strike>
+                <h4>$33,000</h4>
+               
+            </div>
+
+            <div class="first-model">
+                <a href="html/product_subpages/product8.html"><img src="images/products/Glashuette4.png" alt=""></a>
+                <div class="details">
+                    <a href="html/product_subpages/product8.html" style="text-decoration: none;"><span>Glashuette</span></a>
+                        <a href="html/product_subpages/product8.html" style="text-decoration: none;"><h5>Senator Chronometer Tourbillon</h5></a>
+                </div>
+                <strike style="color: red;">$180,000</strike>
+                <h4>$176,000</h4>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--html code for banner-->
+    <section id="banner">
+        <div class="first-banner">
+            <!--adding overview of other webpages in homepage-->
+            <h4>Blog</h4>
+            <h2>Enjoy your day with time</h2>
+            <p>Latest news and updates about watches</p>
+            <a href="html/blog.html"><button class="action">Read More</button></a><!--overview of other webpages in blogpage-->
+        </div>
+
+        <div class="second-banner">
+            <h4>About Us</h4>
+            <h2>Who we are</h2>
+            <p>Shine with time</p>
+            <a href="html/about.html"><button class="action">Know More</button></a><!--overview of other webpages in aboutuspage-->
+        </div>
+    </section>
+
+    <!--html code for banner-->
+    <section id="border">
+        <style>
+            #border button:hover{
+                background-color: skyblue;
+                color: black;
+            }
+        </style>
+        <h4>Researching is the best part of a work</h4>
+        <p>Know more about how we work</p>
+        <a href="html/research.html"><button class="explore">Let's Research</button></a><!--overview of other webpages in researchpage-->
+    </section>
+
+    <!--footer section-->
+    <footer class="last">
+        <div class="newsletter">
+            <img src="images/homepage/logo.png" alt="" style="height: 90px;">
+            <h4 style="color: darkorange;">Follow Us</h4>
+            <a href="https://www.facebook.com/"><img src="images/homepage/fb.png" alt="" style="cursor: pointer;"></a>
+            <a href="https://www.instagram.com/"><img src="images/homepage/insta.png" alt="" style="cursor: pointer;"></a>
+        </div>
+
+        <div class="column">
+            <h4>Contact Us</h4>
+            <p><strong>Address: </strong> Durbarmarg, Kathmandu 44600 </p>
+            <p><strong>Phone:</strong> 01-4245472</p>
+            <p><strong>Hours:</strong> 9:00 - 19:00, Sun - Fri </p>
+            <h4>For Newsletter</h4>
+            <input type="text" name="sub" id="subs" placeholder="Type Something" style="margin: 10px 0px; padding: 5px 0px;">
+            <button class="news" onclick="Subscribe()">Subscribe</button>        
+        </div>
+
+        <div class="column">
+            <h4>Quick Links</h4>
+            <a href="home.html" >Home</a>
+            <a href="html/product.html" >Product</a>
+            <a href="html/blog.html" >Blog</a>
+            <a href="html/research.html" >Research</a>
+            <a href="html/about.html" >About Us</a>
+            
+            <p style="color: darkorange;">Secured Payment Gateways</p>
+            <img src="images/homepage/payment.png" alt="" height="80px">
+        </div>
+        
+    </footer>
+
+      <!--JavaScript for time and date-->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            
+            // Get time in 12-hour format
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            // Convert hours to 12-hour format
+            const period = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12 || 12; // Ensure 12-hour format  
+        
+            // Updates time continuosly
+            document.getElementById('count').textContent = `${hours}:${minutes}:${seconds} ${period}`;
+        
+            // Updates date
+            const options = { month: 'long', day: 'numeric', year: 'numeric' };
+            document.getElementById('calendar').textContent = now.toLocaleDateString('en-US', options);
+        };
+        
+        // updates the time every second
+        setInterval(updateClock, 1000);
+        updateClock(); // Run immediately on page load
+        
+    </script>
+
+    <script src="js/script.js"></script><!--link to external js-->
+</body>
+</html> 
