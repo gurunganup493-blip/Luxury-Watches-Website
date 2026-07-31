@@ -208,7 +208,7 @@
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image: url("../images/homepage/imgwatchh.png");
+  background-image: url("../images/imgwatchh.png");
   min-width: 580px;
   height: 400px;
   background-size: cover;
@@ -222,7 +222,7 @@
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image: url("../images/homepage/actionbanner.png");
+  background-image: url("../images/actionbanner.png");
   min-width: 580px;
   height: 400px;
   background-size: cover;
@@ -286,7 +286,7 @@
 
 /*border starts here*/
 #border {
-  background-image: url("../images/homepage/decor.png");
+  background-image: url("../images/decor.png");
   background-position: cover;
   background-size: cover;
   width: 100%;
